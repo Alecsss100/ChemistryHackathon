@@ -363,6 +363,8 @@ MonoBehaviour:
   sceneName: SampleScene
   dialogueImg: {fileID: 367938404}
   text: {fileID: 1115832942}
+  nameImg: {fileID: 1696472918}
+  nameText: {fileID: 502057924}
   hideSpeed: 1
   startWait: 5
   spawnTime: 0.1
