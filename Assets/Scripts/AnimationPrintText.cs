@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class AnimationPrintText : MonoBehaviour
 {
-    public Text uiText;
-    public float spawnTime = 0.1f;
+    //public Text uiText;
+    //public float spawnTime = 0.1f;
 
-    public void StartAnimation(string text)
+    public void StartAnimation(string text, Text uiText, float spawnTime)
     {
-        StartCoroutine(TextCoroutine(text));
+        StartCoroutine(TextCoroutine(text, uiText, spawnTime));
     }
-    IEnumerator TextCoroutine(string text)
+    IEnumerator TextCoroutine(string text, Text uiText, float spawnTime)
     {
         uiText.text = "";
         foreach (char c in text)
