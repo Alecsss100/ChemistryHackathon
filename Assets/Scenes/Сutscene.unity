@@ -366,7 +366,7 @@ MonoBehaviour:
   nameImg: {fileID: 1696472918}
   nameText: {fileID: 502057924}
   hideSpeed: 1
-  startWait: 5
+  startWait: 1
   spawnTime: 0.1
   texts:
   - "\u041F\u0440\u0438\u0432\u0435\u0442, \u0441\u043A\u0438\u043F\u0430\u0442\u044C
