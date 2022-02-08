@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5224803380622762709}
   - component: {fileID: 5224803380622762698}
   - component: {fileID: 4068706252375417303}
+  - component: {fileID: 161883741673678872}
   m_Layer: 5
   m_Name: Level
   m_TagString: Untagged
@@ -91,6 +92,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelId: 0
   childImage: {fileID: 1826518802244076380}
+  lockLvl: {fileID: 21300000, guid: 4fe83ebbf0f9de04eb4a6fa7643015b4, type: 3}
+  unlockLvl: {fileID: 21300000, guid: 9e05bf15c5c076f44963026d9558cce0, type: 3}
+--- !u!114 &161883741673678872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5224803380622762696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520b14e57d3b3d44496fbe2b22e7bb0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6948867682119299666
 GameObject:
   m_ObjectHideFlags: 0

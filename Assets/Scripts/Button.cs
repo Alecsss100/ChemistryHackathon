@@ -1,19 +1,18 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Button : IButton
+[RequireComponent(typeof(Level))]
+public class Button : MonoBehaviour, IButton
 {
-    public void DoAction(Action action)
+    private int levelIndex;
+    public void Awake()
     {
-
+        levelIndex = GetComponent<Level>().GetLvlId();
     }
-
     public void OnPointerClick(PointerEventData eventData)
     {
-        DoAction(()=>SceneManager.LoadScene(0));
+         LvlController.LoadScene(levelIndex);
     }
 }

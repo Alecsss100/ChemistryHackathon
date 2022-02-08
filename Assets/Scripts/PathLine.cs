@@ -8,9 +8,9 @@ public class PathLine : MonoBehaviour
     [SerializeField] Image pathLight;
     [SerializeField] LevelEnum.Level levelId;
 
-    private void Start()
+    public void Start()
     {
-        if ((int)levelId < LvlController.LevelCounter) Unlock();
+        if (GetLvlId() < LvlController.LevelCounter) Unlock();
         else Lock();
     }
 
