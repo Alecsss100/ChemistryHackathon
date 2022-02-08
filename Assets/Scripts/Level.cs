@@ -23,7 +23,6 @@ public class Level : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Дописать для бг чтоб серым становился");
         if ((int)levelId <= LvlController.LevelCounter) UnlockLvl();
         else LockLvl();
 

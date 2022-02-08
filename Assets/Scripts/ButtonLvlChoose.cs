@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Level))]
-public class Button : MonoBehaviour, IButton
+public class ButtonLvlChoose : MonoBehaviour, IButton
 {
     private int levelIndex;
     public void Awake()
