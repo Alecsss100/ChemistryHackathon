@@ -24,6 +24,9 @@ public class Element : ScriptableObject, IComparable<Element>
     [Tooltip("Название элемента")]
     public string nameElement;
 
+    [Tooltip("Спрайт элемента")]
+    public Sprite sprite;
+
     [Tooltip("Описание элемента")]
     [TextArea(0, 8)] public string discription;
 
