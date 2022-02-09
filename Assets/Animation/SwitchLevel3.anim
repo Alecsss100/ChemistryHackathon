@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SwitchLevelBack
+  m_Name: SwitchLevel3
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -22,22 +22,22 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1080
-        inSlope: -8422.088
-        outSlope: -8422.088
+        value: 0
+        inSlope: 4340.4565
+        outSlope: 4340.4565
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.3235801
-        outWeight: 0.06202327
+        inWeight: 0.33333334
+        outWeight: 0.044273827
       - serializedVersion: 3
         time: 0.33333334
-        value: 3.3866272
-        inSlope: 26.438368
-        outSlope: 26.438368
+        value: 1080
+        inSlope: -170.1573
+        outSlope: -170.1573
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.47723243
-        outWeight: 0.08261617
+        inWeight: 0.6236725
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -87,22 +87,22 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1080
-        inSlope: -8422.088
-        outSlope: -8422.088
+        value: 0
+        inSlope: 4340.4565
+        outSlope: 4340.4565
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.3235801
-        outWeight: 0.06202327
+        inWeight: 0.33333334
+        outWeight: 0.044273827
       - serializedVersion: 3
         time: 0.33333334
-        value: 3.3866272
-        inSlope: 26.438368
-        outSlope: 26.438368
+        value: 1080
+        inSlope: -170.1573
+        outSlope: -170.1573
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.47723243
-        outWeight: 0.08261617
+        inWeight: 0.6236725
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4

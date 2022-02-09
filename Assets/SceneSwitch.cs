@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SceneSwitch : MonoBehaviour
 {
-    [SerializeField] string nameScene;
+    public string nameScene;
     public void SwitchLevel()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(nameScene);

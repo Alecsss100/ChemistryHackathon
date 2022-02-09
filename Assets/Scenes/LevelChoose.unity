@@ -1174,6 +1174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c3cdf0f37313414db18fe3d0b9b5218, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneSwitch: {fileID: 1834605868}
 --- !u!1001 &1237573014
 PrefabInstance:
   m_ObjectHideFlags: 0

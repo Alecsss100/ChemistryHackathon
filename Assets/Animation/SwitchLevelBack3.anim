@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SwitchLevelBack
+  m_Name: SwitchLevelBack3
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -23,21 +23,21 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 1080
-        inSlope: -8422.088
-        outSlope: -8422.088
-        tangentMode: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
-        inWeight: 0.3235801
-        outWeight: 0.06202327
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.33333334
-        value: 3.3866272
-        inSlope: 26.438368
-        outSlope: 26.438368
-        tangentMode: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
-        inWeight: 0.47723243
-        outWeight: 0.08261617
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -88,21 +88,21 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 1080
-        inSlope: -8422.088
-        outSlope: -8422.088
-        tangentMode: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
-        inWeight: 0.3235801
-        outWeight: 0.06202327
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.33333334
-        value: 3.3866272
-        inSlope: 26.438368
-        outSlope: 26.438368
-        tangentMode: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
-        inWeight: 0.47723243
-        outWeight: 0.08261617
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -113,4 +113,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.33333334
+    functionName: SwitchLevel
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

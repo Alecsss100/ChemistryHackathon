@@ -18,6 +18,18 @@ public class GameElement : MonoBehaviour
         else SetDefault();
     }
 
+    public void Hide()
+    {
+        if (!element) return;
+        SetDefault();
+    }
+
+    public void UnHide()
+    {
+        if (!element) return;
+        SetParam(element);
+    }
+
     private void SetDefault()
     {
         ChemestryName.text = "";
@@ -36,15 +48,9 @@ public class GameElement : MonoBehaviour
         ViewElement.SetNativeSize();
     }
 
-    public void OnMouseEnter()
-    {
-        Debug.Log("B");
-    }
-
     public void OnMouseDown()
     {
         if (!element) return;
-        Debug.Log("A");
         MovebleElement.Init(this);
     }
 }
