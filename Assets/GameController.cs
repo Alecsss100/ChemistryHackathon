@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
-        StartBattle();
+        StartDialog();
     }
 
     public static void StartDialog()
@@ -26,9 +26,14 @@ public class GameController : MonoBehaviour
 
     }
 
-    public static void EndDialog()
+    public static void NextCharacter()
     {
 
+    }
+
+    public static void EndDialog()
+    {
+        StartBattle();
     }
 
     public static void StartBattle()
@@ -49,5 +54,11 @@ public class GameController : MonoBehaviour
     public static void GetAchive()
     {
 
+    }
+
+    IEnumerator Wait(System.Action action, float seconds = 1)
+    {
+        yield return new WaitForSeconds(seconds);
+        action?.Invoke();
     }
 }
