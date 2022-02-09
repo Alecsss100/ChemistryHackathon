@@ -17,8 +17,10 @@ public class AnimationPrintText : MonoBehaviour
         uiText.text = "";
         foreach (char c in text)
         {
+            if (Input.GetKey(KeyCode.Space)) break;
             uiText.text += c.ToString();
             yield return new WaitForSeconds(spawnTime);
         }
+        uiText.text = text;
     }
 }
