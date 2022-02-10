@@ -7,7 +7,12 @@ public class LvlController : MonoBehaviour
 {
     [SerializeField] Animator sceneSwitch;
 
-    private static int levelCounter = 3;
+    [Header("LvlMark")]
+    public Sprite green;
+    public Sprite yellow;
+    public Sprite red;
+
+    private static int levelCounter = 0;
     private static int curLevel;
     public static int LevelCounter
     {
@@ -32,9 +37,38 @@ public class LvlController : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public static Sprite GetMark(int mark)
+    {
+        switch (mark)
+        {
+            case 1:
+                return instance.red;
+                break;
+            case 2:
+                return instance.yellow;
+                break;
+            case 3:
+                return instance.green;
+                break;
+            default:
+                return null;
+                break;
+        }
+    }
+
+    public static void SetCurrentLvl(int lvl)
+    {
+        curLevel = lvl;
+    }
+
     public static int GetCurrentLvl()
     {
         return LevelCounter;
+    }
+
+    public static int GetChoosenLvl()
+    {
+        return curLevel;
     }
 
     public static void LvlUp()

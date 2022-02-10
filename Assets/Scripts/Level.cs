@@ -13,26 +13,28 @@ public class Level : MonoBehaviour
     [Header("Текстуры")]
     [SerializeField] Sprite lockLvl;
     [SerializeField] Sprite unlockLvl;
+    [SerializeField] Sprite monsterHead;
 
     private Image gameobjImg;
 
-    private void Awake()
+    public void Awake()
     {
         gameobjImg = GetComponent<Image>();
     }
 
-    private void Start()
+    public void Start()
     {
         if ((int)levelId <= LvlController.LevelCounter) UnlockLvl();
         else LockLvl();
 
-        if (PlayerPrefs.HasKey("LvlAch" + (int)levelId) ? (PlayerPrefs.GetInt("LvlAch" + (int)levelId) == 1 ? true : false) : false) UnlockAch();
+        if (PlayerPrefs.HasKey("LvlAch" + (int)levelId) ? (PlayerPrefs.GetInt("LvlAch" + (int)levelId) != 0 ? true : false) : false) UnlockAch();
         else LockAch();
     }
 
     private void UnlockLvl()
     {
-        gameobjImg.sprite = unlockLvl;
+        if ((int)levelId == LvlController.LevelCounter) gameobjImg.sprite = monsterHead;
+        else gameobjImg.sprite = unlockLvl;
     }
 
     private void LockLvl()
@@ -42,7 +44,10 @@ public class Level : MonoBehaviour
 
     private void UnlockAch()
     {
+        if ((int)levelId == LvlController.LevelCounter) { LockAch(); return; }
         childImage.color = new Color(childImage.color.r, childImage.color.g, childImage.color.b, 1);
+        childImage.sprite = LvlController.GetMark(PlayerPrefs.GetInt("LvlAch" + (int)levelId));
+        childImage.SetNativeSize();
     }
 
     private void LockAch()

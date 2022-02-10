@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     [Header("Screens")]
     [SerializeField] Animator achScreen;
     [SerializeField] Animator winScreen;
+    [SerializeField] WinScreen winScreenScript;
 
     [Header("Ach Checker")]
     [SerializeField] Achievement achieve;
@@ -68,6 +69,11 @@ public class GameController : MonoBehaviour
         StartCoroutine(Wait(() => NextCharacter(), 0.75f));
     }
 
+    public static int GetHp()
+    {
+        return instance.healthBar.HP;
+    }
+
     public bool AddElementCombo(Element element)
     {
         foreach (var item in combinedElements)
@@ -112,8 +118,13 @@ public class GameController : MonoBehaviour
     public static void Win()
     {
         Debug.Log("Вы победили");
+        instance.winScreenScript.SwitchStone();
         LvlController.LvlUp();
-        if (instance.achieve.Check()) instance.achScreen.Play("ToScreen");
+        if (instance.achieve.Check())
+        {
+            GetAchive();
+            instance.achScreen.Play("ToScreen");
+        }
         else instance.winScreen.Play("ToScreen");
     }
 
@@ -126,7 +137,7 @@ public class GameController : MonoBehaviour
 
     public static void GetAchive()
     {
-
+        PlayerPrefs.SetInt("LvlAch" + LvlController.GetChoosenLvl(), instance.healthBar.HP);
     }
 
     public static void PlaceTextInDiscription(string text)

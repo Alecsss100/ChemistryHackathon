@@ -13,6 +13,7 @@ public class ButtonLvlChoose : MonoBehaviour, IButton
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-         LvlController.LoadScene(levelIndex);
+        Debug.Log(LvlController.GetChoosenLvl());
+        LvlController.LoadScene(levelIndex);
     }
 }
