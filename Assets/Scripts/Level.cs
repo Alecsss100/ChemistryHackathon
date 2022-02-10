@@ -44,7 +44,8 @@ public class Level : MonoBehaviour
 
     private void UnlockAch()
     {
-        if ((int)levelId == LvlController.LevelCounter) { LockAch(); return; }
+
+        if ((int)levelId >= LvlController.LevelCounter) { LockAch(); return; }
         childImage.color = new Color(childImage.color.r, childImage.color.g, childImage.color.b, 1);
         childImage.sprite = LvlController.GetMark(PlayerPrefs.GetInt("LvlAch" + (int)levelId));
         childImage.SetNativeSize();

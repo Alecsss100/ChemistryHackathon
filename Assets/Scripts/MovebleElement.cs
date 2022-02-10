@@ -52,8 +52,6 @@ public class MovebleElement : MonoBehaviour
     public static void EnemyDetect(bool state)
     {
         detect = state;
-        if (detect) instance.currentElement?.GrowUp();
-        instance.currentElement?.GrowDown();
     }
 
     public void Update()

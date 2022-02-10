@@ -464,9 +464,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: lockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: 5ecf3664f57c55143bfeeb2cddeb12c2, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: unlockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: e4f1653e07065bc44b6391addc493fd1, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
       propertyPath: monsterHead
       value: 
-      objectReference: {fileID: 21300000, guid: 2e9fada2ea206da4b86b0f450c8d07a0, type: 3}
+      objectReference: {fileID: 21300000, guid: 05a36d863e877e54ab87b8b1c2b9e5d8, type: 3}
     - target: {fileID: 4904700357233052185, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -659,6 +667,18 @@ PrefabInstance:
       propertyPath: levelId
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: lockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: 4fe83ebbf0f9de04eb4a6fa7643015b4, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: unlockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: 2fb962c05ebd8fe4889f36467591a4d8, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: monsterHead
+      value: 
+      objectReference: {fileID: 21300000, guid: 4fe83ebbf0f9de04eb4a6fa7643015b4, type: 3}
     - target: {fileID: 5224803380622762696, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
       propertyPath: m_Name
       value: Level6
@@ -1028,6 +1048,18 @@ PrefabInstance:
       propertyPath: levelId
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: lockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: 52a6b17d412bcfc47ae9f82a627ed411, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: unlockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: a97c7bc62c82b5541bb9ed1e0bfc10f3, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: monsterHead
+      value: 
+      objectReference: {fileID: 21300000, guid: 12a2143255527e748ab806f9d6a0b5bd, type: 3}
     - target: {fileID: 5224803380622762696, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
       propertyPath: m_Name
       value: Level4
@@ -1803,6 +1835,18 @@ PrefabInstance:
       propertyPath: levelId
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: lockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: 5dfb6994f87505849943b2122800240c, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: unlockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: 2fb962c05ebd8fe4889f36467591a4d8, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: monsterHead
+      value: 
+      objectReference: {fileID: 21300000, guid: 5c33e753c533a5246ab7e12280b7b7f3, type: 3}
     - target: {fileID: 5224803380622762696, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
       propertyPath: m_Name
       value: Level3
@@ -1925,6 +1969,18 @@ PrefabInstance:
       propertyPath: levelId
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: lockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: 4fe83ebbf0f9de04eb4a6fa7643015b4, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: unlockLvl
+      value: 
+      objectReference: {fileID: 21300000, guid: 2fb962c05ebd8fe4889f36467591a4d8, type: 3}
+    - target: {fileID: 4068706252375417303, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
+      propertyPath: monsterHead
+      value: 
+      objectReference: {fileID: 21300000, guid: 4fe83ebbf0f9de04eb4a6fa7643015b4, type: 3}
     - target: {fileID: 5224803380622762696, guid: 677fb9cbb9bd5074981529fe89d104d9, type: 3}
       propertyPath: m_Name
       value: Level5

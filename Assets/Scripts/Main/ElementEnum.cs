@@ -15,6 +15,7 @@ public class ElementEnum : MonoBehaviour
         P = 6,
         S = 7,
         Cl = 8,
-        NaCl = 9
+        NaCl = 9,
+        NH = 10
     }
 }

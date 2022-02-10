@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     private string toScreen = "ToScreen";
     private string fromScreen = "FromScreen";
     private string hover = "Hover";
+    private string death = "Death";
 
     public void Awake()
     {
@@ -19,6 +20,11 @@ public class Enemy : MonoBehaviour
     public void ToScreen()
     {
         animator.Play(toScreen);
+    }
+
+    public void Death()
+    {
+        animator.Play(death);
     }
 
     public void FromScreen()

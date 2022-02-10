@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Dialog-1-2
   m_EditorClassIdentifier: 
   side: 0
-  talkedFace: "\u0423\u0447\u0451\u043D\u044B\u0439"
-  text: "\u041D\u0435\u0430)"
+  talkedFace: "\u0425\u043B\u043E\u0440"
+  text: "\u0414\u044B\u0448\u0438, \u0432\u0434\u044B\u0445\u0430\u0439 \u043F\u043E\u0433\u043B\u0443\u0431\u0436\u0435! "

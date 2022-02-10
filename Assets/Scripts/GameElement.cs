@@ -108,16 +108,6 @@ public class GameElement : MonoBehaviour
         return element;
     }
 
-    public void GrowUp()
-    {
-        animator.Play(growUp);
-    }
-
-    public void GrowDown()
-    {
-        animator.Play(growDown);
-    }
-
     IEnumerator Wait()
     {
         curutine = true;

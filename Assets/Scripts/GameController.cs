@@ -118,6 +118,7 @@ public class GameController : MonoBehaviour
     public static void Win()
     {
         Debug.Log("Вы победили");
+        instance.enemy.Death();
         instance.winScreenScript.SwitchStone();
         LvlController.LvlUp();
         if (instance.achieve.Check())

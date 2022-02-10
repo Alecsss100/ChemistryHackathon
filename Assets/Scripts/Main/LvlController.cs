@@ -79,7 +79,7 @@ public class LvlController : MonoBehaviour
     public static void LoadScene(int lvlIndex)
     {
         curLevel = lvlIndex;
-        Transition.PlayCommand("Game");
+        Transition.PlayCommand("Game"+lvlIndex);
         Transition.SwitchLevel();
         instance.sceneSwitch.Play("SwitchLevelDown");
     }

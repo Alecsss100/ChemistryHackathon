@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a4974e439c2c74a941184f3362bac4, type: 3}
   m_Name: Dialog-1-1
   m_EditorClassIdentifier: 
-  side: 1
-  talkedFace: "\u0425\u043B\u043E\u0440 (CL)"
+  side: 0
+  talkedFace: "\u0425\u043B\u043E\u0440"
   text: "\u0425\u0430-\u0445\u0430-\u0445\u0430, \u044F \u0442\u0435\u0431\u044F
     \u0443\u043D\u0438\u0447\u0442\u043E\u0436\u0443, \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439
     \u0443\u0447\u0451\u043D\u044B\u0439!"
