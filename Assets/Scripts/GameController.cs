@@ -5,12 +5,28 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField] ElementsConnection resultConnection;
+
     [SerializeField] Inventory inventory;
-    [SerializeField] MovebleElement moveElement;
 
     [SerializeField] DigalogTable digalogTable;
+    [SerializeField] HealthBar healthBar;
+    [SerializeField] Discription discription;
     [SerializeField] Player player;
     [SerializeField] Enemy enemy;
+
+    [Header("Transition")]
+    [SerializeField] Animator animatorTransition;
+
+    [Header("Screens")]
+    [SerializeField] Animator achScreen;
+    [SerializeField] Animator winScreen;
+
+    [Header("Ach Checker")]
+    [SerializeField] Achievement achieve;
+
+    private List<Element> combinedElements;
+    private List<Element> combo = new List<Element>();
 
     private System.Action action = () => instance.EndDialog();
 
@@ -20,6 +36,8 @@ public class GameController : MonoBehaviour
     {
         if (instance) Destroy(gameObject);
         else instance = this;
+
+        combinedElements = resultConnection.GetCombElements();
     }
 
     public void Start()
@@ -33,6 +51,10 @@ public class GameController : MonoBehaviour
         {
             NextCharacter();
         }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            GameElement.UnHighLightEl();
+        }
     }
 
     public void StartDialog()
@@ -43,6 +65,24 @@ public class GameController : MonoBehaviour
             instance.player.ToScreen();
             instance.enemy.ToScreen();
         }, 0.5f));
+        StartCoroutine(Wait(() => NextCharacter(), 0.75f));
+    }
+
+    public bool AddElementCombo(Element element)
+    {
+        foreach (var item in combinedElements)
+        {
+            if (item.nameChemestry == element.nameChemestry)
+            {
+                for (int i = 0; i < combinedElements.Count; i++)
+                    if (combinedElements[i].nameChemestry == element.nameChemestry)
+                    {
+                        combinedElements.RemoveAt(i);
+                        return true;
+                    }
+            }
+        }
+        return false;
     }
 
     public void NextCharacter()
@@ -71,17 +111,44 @@ public class GameController : MonoBehaviour
 
     public static void Win()
     {
+        Debug.Log("Вы победили");
         LvlController.LvlUp();
+        if (instance.achieve.Check()) instance.achScreen.Play("ToScreen");
+        else instance.winScreen.Play("ToScreen");
     }
 
     public static void Lose()
     {
-
+        Debug.Log("Вы проиграли");
+        Transition.SwitchLevelUp();
+        instance.animatorTransition.Play("SwitchLevelBack");
     }
 
     public static void GetAchive()
     {
 
+    }
+
+    public static void PlaceTextInDiscription(string text)
+    {
+        instance.discription.PlaceText(text);
+    }
+
+    public static void ShowDiscriptionText()
+    {
+        instance.discription.ShowText();
+    }
+
+    public static void DisableDiscriptionText()
+    {
+        instance.discription.HideText();
+    }
+
+    public static void AddElement(Element element)
+    {
+        Debug.Log("Добавлен " + element.nameChemestry);
+        if (!instance.AddElementCombo(element)) instance.healthBar.HpDown();
+        else if (instance.combinedElements.Count == 0) Win();
     }
 
     IEnumerator Wait(System.Action action, float seconds = 1)

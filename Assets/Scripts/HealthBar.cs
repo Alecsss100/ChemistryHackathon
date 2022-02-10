@@ -35,18 +35,11 @@ public class HealthBar : MonoBehaviour
         SetVisualHealth();
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            HpDown();
-        }
-    }
-
     public void HpDown()
     {
         HP -= 1;
         HpAnimation();
+        if (HP == 0) GameController.Lose();
     }
 
     public void HpAnimation()

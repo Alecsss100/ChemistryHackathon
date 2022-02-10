@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField] Element element;
+
     private Animator animator;
 
     private string toScreen = "ToScreen";
@@ -27,5 +29,15 @@ public class Enemy : MonoBehaviour
     public void Hover()
     {
         animator.Play(hover);
+    }
+
+    public void OnMouseEnter()
+    {
+        MovebleElement.EnemyDetect(true);
+    }
+
+    public void OnMouseExit()
+    {
+        MovebleElement.EnemyDetect(false);
     }
 }

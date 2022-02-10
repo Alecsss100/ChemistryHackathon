@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 1176349382443722440}
   - component: {fileID: 2427373203816309911}
   - component: {fileID: 4912399249595784440}
+  - component: {fileID: 276873352797877280}
   m_Layer: 5
   m_Name: Element
   m_TagString: Untagged
@@ -331,6 +332,11 @@ MonoBehaviour:
   SampleName: {fileID: 1176349382181337808}
   AtomicName: {fileID: 1176349381021426176}
   ViewElement: {fileID: 1176349382375415403}
+  bgImage: {fileID: 1176349382443722440}
+  defaultState: {fileID: 21300000, guid: 1bf33a9f906c9454fa2a001cec5b40a4, type: 3}
+  highlightState: {fileID: 21300000, guid: dd0db6ea90f1b8f449d1fd523c52dea1, type: 3}
+  animator: {fileID: 276873352797877280}
+  mouseActive: 0
 --- !u!61 &4912399249595784440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -357,6 +363,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 160, y: 120}
   m_EdgeRadius: 0
+--- !u!95 &276873352797877280
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176349382443722446}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 39e2626f052873d41abd5be8e134eeb5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1176349382755937433
 GameObject:
   m_ObjectHideFlags: 0

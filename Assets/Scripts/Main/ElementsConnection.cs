@@ -24,4 +24,9 @@ public class ElementsConnection : ScriptableObject
 
         return true;
     }
+
+    public List<Element> GetCombElements()
+    {
+        return new List<Element>(combinedElements);
+    }
 }
